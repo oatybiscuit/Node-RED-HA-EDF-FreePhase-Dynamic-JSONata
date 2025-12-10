@@ -1,7 +1,7 @@
 # Node-RED-HA-EDF-FreePhase-Dynamic-JSONata
 
 [![GitHub Release](https://img.shields.io/github/v/release/oatybiscuit/Node-RED-HA-EDF-FreePhase-Dynamic-JSONata)](https://github.com/oatybiscuit/Node-RED-HA-EDF-FreePhase-Dynamic-JSONata/releases)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/oatybiscuit/node-red-ha-edf-freephase-dynamic-jsonata/latest/total)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/oatybiscuit/Node-RED-HA-EDF-FreePhase-Dynamic-JSONata/latest/total)
 [![License: MIT](https://img.shields.io/github/license/oatybiscuit/node-red-ha-edf-freephase-dynamic-jsonata)](/LICENSE)
 
 [![Node RED](https://img.shields.io/badge/Node--RED-8f0000)](https://nodered.org/)
