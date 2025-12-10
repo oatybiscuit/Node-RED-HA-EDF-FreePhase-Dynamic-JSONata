@@ -258,7 +258,7 @@ The import product given as the API calling parameter will show with the respect
 - full region tariff code used
 - standing charge and unit rate for this product and region (at the *exact* time of the update, so of little practical use for Agile products)
 
-The *latest product list* provides all currently market-available Octopus variable-rate products that have 'Agile' in the name:
+The *latest product list* provides all currently market-available EDF dynamic products that have 'FREEPHASE' in the name:
 
 - mode (import/export)
 - product code
@@ -323,7 +323,7 @@ Some fields in the array object have been deleted before passing to the sensor. 
 
 The provided variables are mostly held in the sensor *attributes*, and these can be extracted within Home Assistant using appropriate template functions and configuration settings. Attributes are used for passing the arrays, out of necessity, however the flow could easily be modified to add further entity sensors, should you prefer to pass attributes as single entities.
 
-As an example, the main Agile tariff **sensor.edf_freephase_prices** can provide a display of the current and next prices. The card shown here is a standard entities card, with the YAML configuration as given below.
+As an example, the main EDF tariff **sensor.edf_freephase_prices** can provide a display of the current and next prices. The card shown here is a standard entities card, with the YAML configuration as given below.
 
 ![agile entities](/images/EDF_values.png)
 

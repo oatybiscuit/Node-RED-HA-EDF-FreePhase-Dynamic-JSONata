@@ -1,0 +1,54 @@
+type: entities
+entities:
+  - entity: sensor.edf_freephase_prices
+    name: Time period
+    secondary_info: last-updated
+    icon: mdi:av-timer
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: periods_left
+    name: Periods Left in array
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: price_now
+    name: Price - now
+    suffix: p
+    icon: mdi:currency-gbp
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: band_now
+    name: Band - this period
+    icon: mdi:book
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: price_next
+    name: Price - next period
+    suffix: p
+    icon: mdi:currency-gbp
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: band_next
+    name: Band - next
+    icon: mdi:book
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: new_band_next
+    name: Next Band
+    icon: mdi:arrow-right
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: new_band_start
+    name: Next Band starts at
+    icon: mdi:clock-alert-outline
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: new_band_end
+    name: Next Band ends at
+    icon: mdi:clock-alert-outline
+  - type: attribute
+    entity: sensor.edf_freephase_prices
+    attribute: new_band_price
+    suffix: p
+    name: Next Band Price
+    icon: mdi:currency-gbp
+title: EDF Freephase

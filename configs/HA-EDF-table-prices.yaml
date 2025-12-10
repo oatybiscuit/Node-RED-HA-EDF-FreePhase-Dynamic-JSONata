@@ -1,0 +1,30 @@
+type: custom:flex-table-card
+strict: true
+title: EDF FreePhase Price Bands
+entities:
+  include: sensor.edf_freephase_prices
+columns:
+  - data: blocks
+    modify: x.band
+    name: Band
+  - data: blocks
+    modify: >-
+      (new Date(x.from)).toLocaleString("en-GB", {day:"2-digit", month:"short",
+      hour:"2-digit", minute:"2-digit", timeZoneName:"short"})
+    name: Start Time
+  - data: blocks
+    modify: |-
+      let disp=(new Date(x.upto) > new Date());
+      if (disp) 'yes';
+    name: TEST
+    hidden: true
+  - data: blocks
+    name: Period
+    modify: |-
+      const p=(new Date(x.upto) - new Date(x.from))/60000;
+      var hours = ('00' + Math.floor(p/60)).slice(-2)
+      var minutes = ('00' + (p % 60)).slice(-2);
+      `${hours} h ${minutes}`
+  - data: blocks
+    modify: x.price
+    name: Price (p)
